@@ -72,7 +72,7 @@ export function SignUp() {
                   }
                 );
 
-                localStorage.setItem("token", resp.data.token);
+                localStorage.setItem("paytm-token", resp.data.token);
                 console.log(resp);
                 if (resp.status == 200) {
                   navigate("/dashboard");

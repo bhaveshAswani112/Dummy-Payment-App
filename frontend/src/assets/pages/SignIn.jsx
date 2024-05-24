@@ -48,7 +48,7 @@ export const SignIn = function () {
                   }
                 );
                 // console.log(resp);
-                localStorage.setItem("token", resp.data.token);
+                localStorage.setItem("paytm-token", resp.data.token);
                 if (resp.status == 200) {
                   navigate("/dashboard");
                 }
